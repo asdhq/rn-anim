@@ -1,0 +1,35 @@
+{
+  "name": "shake",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-native-scripts": "0.0.40",
+    "jest-expo": "~18.0.0",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "node node_modules/jest/bin/jest.js --watch"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "expo": "^18.0.3",
+    "lottie-react-native": "^1.1.1",
+    "react": "16.0.0-alpha.12",
+    "react-instantsearch": "^4.0.6",
+    "react-native": "^0.45.1",
+    "react-native-camera-roll-picker": "^1.1.9",
+    "react-native-datepicker": "^1.6.0",
+    "react-native-elements": "^0.13.0",
+    "react-native-gifted-chat": "^0.1.4",
+    "react-native-multiple-select-list": "^1.0.4",
+    "react-native-nav": "^1.2.0",
+    "react-native-shake-event": "^3.0.0"
+  }
+}
