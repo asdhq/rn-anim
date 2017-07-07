@@ -6,6 +6,12 @@ import { List, ListItem, Card, SearchBar } from "react-native-elements"
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
 class ChatList extends Component {
+
+  static defaultProps = {
+    onScrollUp: () => {},
+    onScrollDown: () => {}
+  }
+
   constructor(props) {
     super(props);
 
@@ -48,7 +54,6 @@ class ChatList extends Component {
       this.setState({ index: 2 });
     }
   }
-
 
   
   renderHeader = () => {
