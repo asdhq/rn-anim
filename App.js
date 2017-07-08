@@ -27,7 +27,7 @@ class ChatList extends Component {
 
       toValue: {x:0, y: this.state.position.y},
       duration: 250
-    }).start();
+    }).start(() => this.onScroll());
       },
     });
 
@@ -53,6 +53,12 @@ class ChatList extends Component {
     if (nextProps.data !== this.props.data) {
       this.setState({ index: 2 });
     }
+  }
+
+  onScroll(){
+
+
+   this.setState({ index: this.state.index + 1 });
   }
 
   
@@ -88,7 +94,7 @@ class ChatList extends Component {
 
     return {
       ...position.getLayout(),
-     // transform: [{ rotate }]
+      transform: [{ translateY: position.y }]
     };
   }
 
